@@ -1,1 +1,1 @@
-First command in C
+C scripts and programming
