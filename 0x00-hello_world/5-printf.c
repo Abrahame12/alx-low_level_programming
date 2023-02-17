@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - Will be the important functtion for printf
- * Return : 0 (Success)
+ * main - An important functtion to print a line using printf
+ * Return : 0 if Success
  */
 int main(void)
 {
         printf("with proper grammar, but the outcome is a piece of art,");
-        return (0);
+return (0);
 }
