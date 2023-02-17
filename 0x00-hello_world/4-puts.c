@@ -1,8 +1,7 @@
 #include <stdio.h>
-/*
- *main -- The essential part where the program will be written
-Return :0 (Sucess)
-
+/**
+ *main - The essential function that prints puts
+ *Return: 0 (Success)
  */
 int main(void)
 {
