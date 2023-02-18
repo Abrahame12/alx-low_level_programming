@@ -5,18 +5,21 @@
  */
 int main(void)
 {
-	int a;
+	int c;
+	int d;
 
-	for (a = 01; a < 90; a++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(a + '0');
-		if (a < 90)
-		{
-			putchar(',');
+		for (d = c + 1; d <= '9'; d++)
+			if (c != d)
+			{
+				putchar(c);
+				putchar(d);
+				putchar(',');
+			}
+		if (c == '8' && d == '9')
 			putchar(' ');
-		}
 	}
 	putchar('\n');
 	return (0);
-
 }
