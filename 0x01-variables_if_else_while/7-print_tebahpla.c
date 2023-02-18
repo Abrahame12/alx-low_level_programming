@@ -11,9 +11,10 @@ int main(void)
 	while
 		(c >= 'a')
 		{
-			putchar(c'\n');
-			c++;
+			putchar(c);
+			c--;
 		}
+	putchar('\n');
 	return (0);
 }
 
