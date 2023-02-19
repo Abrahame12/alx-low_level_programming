@@ -23,7 +23,6 @@ int main(void)
 			}
 		if (c == '7' && d == '8' && k == '9')
 			break;
-
 	}
 	putchar('\n');
 	return (0);
