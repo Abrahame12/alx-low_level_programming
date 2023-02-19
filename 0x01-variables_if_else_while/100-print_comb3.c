@@ -1,26 +1,24 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: 0(Success)
+ *main - Entry point
+ *
+ *Return: 0(Success)
  */
 int main(void)
 {
-	int c;
-	int d;
-
-	for (c = '0'; c < '9'; c++)
+	int num1;
+	int num2;
+	for (num1 = 0; num1 <= 8; num1++)
 	{
-		for (d = c + 1; d <= '9'; d++)
-			if (c != d)
-			{
-				putchar(c);
-				putchar(d);
-				putchar(',');
-				putchar(' ');
-			}
-		if (c == '8' && d == '9')
-			break;
-
+		for (num2 = num1 + 1; num2 <= 9; num2++)
+		{
+			putchar(num1 + '0');
+			putchar(num2 + '0');
+				if (num1 == 8 && num2 == 9)
+					continue;
+				putchar(44);
+				putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
