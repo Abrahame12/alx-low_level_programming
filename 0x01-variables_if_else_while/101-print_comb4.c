@@ -1,28 +1,32 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: 0(Success)
+ *main - starting point
+ *
+ *Description: using the main function,
+ *this program will print possible combination
+ *of 3 numbers separated by comma and whitespace.
+ *
+ *Return: 0
  */
 int main(void)
 {
-	int c;
-	int d;
-	int k;
+	int num1, num2, num3;
 
-	for (c = '0'; c <= '7'; c++)
+	for (num1 = 0; num1 <= 7; num1++)
 	{
-		for (d = c + 1; d <= '8'; d++)
-			for (k = d + 1; k <= '9'; k++)
-				if (c != d && k != c && k != d)
-				{
-				putchar(c);
-				putchar(d);
-				putchar(k);
-				putchar(',');
-				putchar(' ');
+		for (num2 = num1 + 1; num2 <= 8; num2++)
+		{
+			for (num3 = num2 + 1; num3 <= 9; num3++)
+			{
+				putchar(num1 + '0');
+				putchar(num2 + '0');
+				putchar(num3 + '0');
+				if (num1 == 7 && num2 == 8 && num3 == 9)
+					continue;
+				putchar(44);
+				putchar(32);
 			}
-		if (c == '7' && d == '8' && k == '9')
-			break;
+		}
 	}
 	putchar('\n');
 	return (0);
