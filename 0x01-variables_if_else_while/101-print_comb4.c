@@ -12,7 +12,7 @@ int main(void)
 	for (c = '0'; c <= '7'; c++)
 	{
 		for (d = c + 1; d <= '8'; d++)
-			for (k = c + 2; k <= '9'; k++)
+			for (k = c + 1; k <= '9'; k++)
 				if (c != d && k != c && k != d)
 				{
 				putchar(c);
