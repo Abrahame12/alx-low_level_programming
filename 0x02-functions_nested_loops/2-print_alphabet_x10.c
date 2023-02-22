@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet_10x - print the letters 10 times
+ * print_alphabet_x10 - print the letters 10 times
  * with a new line
  */
 void print_alphabet_x10(void)
@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
 
 	i = 0;
 
-	while (i <= 10)
+	while (i < 10)
 	{
 		c = 'a';
 		while (c <= 'z')
