@@ -1,22 +1,25 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: 0(Success)
+ *main - Entry point
+ *
+ *Return: 0(Success)
  */
 int main(void)
 {
-	int a;
+	int num1, num2;
 
-	for (a = 01; a < 90; a++)
+	for (num1 = 0; num1 <= 8; num1++)
 	{
-		putchar(a + '0');
-		if (a < 90)
+		for (num2 = num1 + 1; num2 <= 9; num2++)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(num1 + '0');
+			putchar(num2 + '0');
+			if (num1 == 8 && num2 == 9)
+				continue;
+			putchar(44);
+			putchar(32);
 		}
 	}
 	putchar('\n');
 	return (0);
-
 }
