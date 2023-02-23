@@ -16,7 +16,7 @@ int main(void)
 		printf("%lu\n", sum);
 		fb1 = fb2;
 		fb2 = sum;
-		if (n == 49)
+		if (n != 49)
 		{
 			printf(", ");
 		}
