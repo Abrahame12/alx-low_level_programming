@@ -15,7 +15,7 @@ int main(void)
 		if (fbsum > 4000000)
 			break;
 		if ((fbsum % 2) == 0)
-			total_num += fbsum;
+			total_sum += fbsum;
 		fb1 = fb2;
 		fb2 = fbsum;
 	}
