@@ -6,22 +6,22 @@
  */
 int main(void)
 {
-	int n;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	unsigned long fb1 = 0, fb2 = 1, sum;
-
-	for (n = 0; n < 50; n++)
+	for (count = 0; count < 50; count++)
 	{
-		sum = fb1 + fb2;
+		sum = fib1 + fib2;
 		printf("%lu", sum);
-		fb1 = fb2;
-		fb2 = sum;
-		if (n == 49)
-		{
+
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
 			printf("\n");
-		}
 		else
 			printf(", ");
 	}
+
 	return (0);
 }
