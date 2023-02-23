@@ -10,10 +10,10 @@ int main(void)
 
 	unsigned long fb1 = 0, fb2 = 1, sum;
 
-	for (n = 0; n <= 50; n++)
+	for (n = 0; n < 50; n++)
 	{
 		sum = fb1 + fb2;
-		printf("%lu\n", sum);
+		printf("%lu", sum);
 		fb1 = fb2;
 		fb2 = sum;
 		if (n != 49)
