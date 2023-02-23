@@ -18,10 +18,10 @@ int main(void)
 		fb2 = sum;
 		if (n == 49)
 		{
-			printf("\n");
+			printf(", ");
 		}
 		else
-			printf(",");
+			printf("\n");
 	}
 	return (0);
 }
