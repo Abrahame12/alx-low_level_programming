@@ -1,1 +1,1 @@
-echo "C programing skills"
+# C programing skills
